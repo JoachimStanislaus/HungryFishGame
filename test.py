@@ -11,13 +11,13 @@ class Enemy():
         self.size = size
         self.type = random.randint(0,3)
         if self.type == 0 :
-            self.pic = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Fish01_A.png")
+            self.pic = pygame.image.load("assets/Fish01_A.png")
         elif self.type == 1 :
-            self.pic = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Fish02_B.png")
+            self.pic = pygame.image.load("assets/Fish02_B.png")
         elif self.type == 2 :
-            self.pic = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Fish03_B.png")
+            self.pic = pygame.image.load("assets/Fish03_B.png")
         elif self.type == 3 :
-            self.pic = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Fish04_B.png")
+            self.pic = pygame.image.load("assets/Fish04_B.png")
         self.hitbox = pygame.Rect(self.x,self.y,int(self.size*1.25),self.size)
         # Shrink the enemy pic
         self.pic = pygame.transform.scale(self.pic,(int(self.size*1.25), self.size))
@@ -41,9 +41,9 @@ screen = pygame.display.set_mode((game_width, game_height))
 clock = pygame.time.Clock()
 running = True
 
-background_pic = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Scene_A.png")
-background_pic2 = pygame.image.load("../Python-Fish-Eat-Fish-1/assets/Scene_B.png")
-player_pic = pygame.image.load("../Python-Fish-Eat-FIsh-1/assets/jacob2.png")
+background_pic = pygame.image.load("assets/Scene_A.png")
+background_pic2 = pygame.image.load("assets/Scene_B.png")
+player_pic = pygame.image.load("assets/jacob2.png")
 
 #player variables
 player_starting_x = 480
@@ -64,10 +64,10 @@ player_score = 0
 score = 0
 score_font = pygame.font.SysFont("default",30)
 score_text = score_font.render("Score: " + str(player_score),1,(255,255,255))
-play_button_pic = pygame.image.load("../Python-Fish-Eat-FIsh-1/assets/BtnPlayIcon.png")
+play_button_pic = pygame.image.load("assets/BtnPlayIcon.png")
 play_button_x = game_width/2 - play_button_pic.get_width()/2
 play_button_y = game_height/2 - play_button_pic.get_height()/2
-title_pic = pygame.image.load("../Python-Fish-Eat-FIsh-1/assets/title.png")
+title_pic = pygame.image.load("assets/title.png")
 title_x = game_width/2 - title_pic.get_width()/2
 title_y = play_button_y - 100
 
