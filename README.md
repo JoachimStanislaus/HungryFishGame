@@ -50,7 +50,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Install Dependencies
+### Run game
 ```sh
 python3 test.py 
 or
