@@ -50,6 +50,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Install Dependencies
+```sh
+python3 test.py 
+or
+python test.py
+```
+
 ### Deactivate the Environment
 
 ```sh
