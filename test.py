@@ -84,7 +84,6 @@ bg_animation_frame = 0
 enemies = []
 enemies_to_remove = []
 
-#***************** Loop land Below *******************
 # Everything under 'while running' will be repeated over and over again
 while running:
     # Makes the game stop if the player clicks the X or presses esc
